@@ -1,2 +1,2 @@
-# Bleak-Midwinter-Sports-Betting
-If the Peaky Blinders can do it, so can I.
+# NFL Machine Learning Sports Prediction
+I wanted to see if I could beat regular predictions of NFL games and pred
