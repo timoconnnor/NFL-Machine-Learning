@@ -1,2 +1,2 @@
-# Bleak-Midwinter
+# Bleak-Midwinter-Betting
 Inspired by the Peaky Blinders Water Lane betting shop, I will use computer magic to win
