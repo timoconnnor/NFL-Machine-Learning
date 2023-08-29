@@ -4,7 +4,9 @@ I wanted to see if I could beat regular predictions of NFL games and use machine
 <Header> Step-By-Step Breakdown</Header>
 <SubHeading>
   <li>Data Collection</li>
-  <p>Get together a data set of historical NFL game data using the Odds API </p>
+    <ul>
+      <li>Get together a data set of historical NFL game data using the Odds API </li>
+    </ul>
   <li>Feature Engineering</li>
   <li>Model Selection</li>
   <li>Training</li>
