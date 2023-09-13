@@ -1,55 +1,57 @@
 # NFL Machine Learning Sports Prediction
 I wanted to see if I could beat regular predictions of NFL games and use machine learning algorithms to find them. Here's a step-by-step guide on how I created machine learning software for betting. 
 
+**Disclaimer: Please don't sue me if you lose all your money, this is just for fun :)**
+
 ## Step-By-Step Breakdown:
 <SubHeading>
 
 <li>
-Define Your Objective:
+Data Collection:
 
-Clearly define the purpose of your betting software. What kind of bets do you want to make? (e.g., sports betting, stock market predictions, etc.)</li>
-
-<li>Gather Data:
-
-Collect historical data related to the events you want to bet on. For sports betting, this could include past game results, player statistics, weather conditions, and more. For stock market predictions, you'd need historical stock price data, financial indicators, news sentiment, etc. </li>
+Gather historical NFL game data, including detailed statistics, team information, and game results. You can find datasets from sources like the NFL API, sports data providers, or web scraping.</li>
 
 <li>Data Preprocessing:
 
-Clean and preprocess the data. This involves handling missing values, normalizing data, and converting categorical variables into numerical ones.</li>
+Clean and preprocess the data. Handle missing values, normalize or scale numerical features, and encode categorical variables. </li>
 
 <li>Feature Engineering:
 
-Create relevant features from your data. This step can significantly impact the performance of your machine learning model. For example, in sports betting, you might create features like team win streaks, player injury status, etc. </li>
+Create relevant features that can impact the scores. These might include team performance averages, historical performance, player statistics, and even external factors like weather conditions.</li>
 
-<li>Select a Machine Learning Algorithm:
+<li>Target Variable Preparation:
 
-Choose an appropriate machine learning algorithm for your task. Common choices include regression for predicting numerical outcomes (e.g., stock prices) and classification for predicting discrete outcomes (e.g., win or lose in sports). </li>
+Decide on the specific regression target variable. It could be the total points scored in a game, the points scored by a specific team, or the point spread (difference in scores between two teams).</li>
 
-<li>Split Data for Training and Testing:
+<li>Data Splitting:
 
-Split your dataset into training and testing sets. This helps you evaluate your model's performance on unseen data. </li>
+Split your dataset into training, validation, and test sets. This allows you to train your model, tune hyperparameters, and evaluate its performance on unseen data. </li>
+
+<li>Model Selection:
+
+Choose a regression algorithm suitable for predicting NFL game scores. Common choices include linear regression, decision trees, random forests, or more advanced models like neural networks. </li>
 
 <li>Model Training:
 
-Train your machine learning model using the training data. Fine-tune hyperparameters and optimize the model for better performance.</li>
+Train your chosen model on the training dataset. Experiment with different hyperparameters and feature sets to find the best model configuration.</li>
 <li>Model Evaluation:
 
-Evaluate the model's performance on the testing data using appropriate metrics (e.g., Mean Absolute Error for regression, Accuracy for classification). </li>
-<li>Risk Management:
+Evaluate your regression model using appropriate metrics such as mean squared error (MSE), mean absolute error (MAE), or root mean squared error (RMSE). These metrics quantify the difference between predicted and actual scores. </li>
+<li>Hyperparameter Tuning:
 
-Implement risk management strategies. Betting inherently involves risk, so consider how much to bet on each prediction and set limits to prevent significant losses. </li>
-<li>Deployment:
+Fine-tune your model's hyperparameters to improve its predictive performance. Techniques like grid search or random search can help with this.</li>
+<li>Test Your Model:
 
-Once you are satisfied with your model's performance, deploy it as a software application. Users can input current data, and the model will make predictions. </li>
-<li>Monitoring and Maintenance:
+Assess your model's performance on the test dataset to ensure it generalizes well to new, unseen NFL games. </li>
+<li>Implement Betting Strategy:
 
-Continuously monitor your model's performance and update it as needed. Machine learning models may degrade over time if not maintained. </li>
-<li>Legal and Ethical Considerations:
+Develop a betting strategy based on your score predictions. Consider factors like the predicted score difference, confidence level, and risk management. </li>
+<li>Backtesting:
 
-Ensure that your betting software complies with legal regulations in your area. Be responsible and ethical in its use. </li>
-<li>Feedback Loop:
+Backtest your betting strategy on historical data to evaluate its potential profitability and risks.</li>
+<li>Deployment and Monitoring:
 
-Gather feedback from users and use it to improve your software continually.</li>
+If your model performs well in testing and backtesting, consider deploying it for real-time predictions during NFL games. Continuously monitor its performance and adjust your betting strategy as needed.</li>
 </SubHeading>
 
 
